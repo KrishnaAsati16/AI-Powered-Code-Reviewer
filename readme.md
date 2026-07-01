@@ -22,3 +22,25 @@ An AI-powered web application that analyzes source code, identifies issues, and 
 3. The backend forwards the code to the Google Gemini API with a system prompt instructing it to act as a senior code reviewer.
 4. Gemini analyzes the code and returns structured feedback covering best practices, performance, security, and readability.
 5. The response is rendered in the UI as formatted Markdown with syntax-highlighted code snippets.
+
+## Project Structure
+
+```
+Ai-Powered-Code-Reviewer/
+├── BackEnd/
+│   ├── src/
+│   │   ├── controllers/     # Request handlers
+│   │   ├── routes/          # API route definitions
+│   │   ├── services/        # Gemini AI integration logic
+│   ├── server.js            # Express app entry point
+│   ├── package.json
+│   └── .env                 # Environment variables (not committed)
+│
+├── Frontend/
+│   ├── src/
+│   │   ├── components/      # React components
+│   │   ├── App.jsx          # Main application UI
+│   ├── package.json
+│
+└── README.md
+```
