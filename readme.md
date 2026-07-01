@@ -14,3 +14,11 @@ An AI-powered web application that analyzes source code, identifies issues, and 
 - Google Gemini API (`gemini-2.5-flash`)
 
 > Note: This project does not use a database. It is a stateless full-stack application — no user data or review history is persisted.
+
+## How It Works
+
+1. The user writes or pastes code into the React-based code editor.
+2. On clicking **Review**, the frontend sends the code to the backend via an API request.
+3. The backend forwards the code to the Google Gemini API with a system prompt instructing it to act as a senior code reviewer.
+4. Gemini analyzes the code and returns structured feedback covering best practices, performance, security, and readability.
+5. The response is rendered in the UI as formatted Markdown with syntax-highlighted code snippets.
